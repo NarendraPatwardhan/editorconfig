@@ -12,6 +12,7 @@ local plugins = {
       {
         "jose-elias-alvarez/null-ls.nvim",
         opts = function()
+          ---@diagnostic disable-next-line: redundant-return-value
           return require "custom.configs.null-ls"
         end,
       },
