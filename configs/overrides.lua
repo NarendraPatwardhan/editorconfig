@@ -13,6 +13,7 @@ M.treesitter = {
     "cpp",
     "rust",
     "go",
+    "python",
     "markdown",
     "markdown_inline",
   },
@@ -46,6 +47,12 @@ M.mason = {
 
     -- go stuff
     "gopls",
+
+    -- python stuff
+    "pyright",
+    "mypy",
+    "ruff",
+    "black",
   },
 }
 
