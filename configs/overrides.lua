@@ -72,11 +72,14 @@ M.nvimtree = {
   },
 }
 
--- rust crates completion
-M.cmp = function()
-  local N = require "plugins.configs.cmp"
-  table.insert(N.sources, { name = "crates" })
-  return N
-end
+-- Copilot
+M.copilot = {
+  suggestion = {
+    enable = false,
+  },
+  panel = {
+    enable = false,
+  },
+}
 
 return M

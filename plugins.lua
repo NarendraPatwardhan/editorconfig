@@ -44,7 +44,16 @@ local plugins = {
 
   {
     "hrsh7th/nvim-cmp",
-    opts = overrides.cmp,
+    opts = {
+      sources = {
+        { name = "nvim_lsp" },
+        { name = "luasnip" },
+        { name = "buffer" },
+        { name = "nvim_lua" },
+        { name = "path" },
+        { name = "crates" },
+      },
+    },
   },
 
   -- Install a plugin
@@ -71,6 +80,10 @@ local plugins = {
       crates.setup(opts)
       crates.show()
     end,
+  },
+
+  {
+    import = "custom.configs.extras.copilot",
   },
 
   -- To make a plugin not be loaded
