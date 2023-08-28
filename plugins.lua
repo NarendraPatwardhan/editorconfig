@@ -42,20 +42,6 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
-  {
-    "hrsh7th/nvim-cmp",
-    opts = {
-      sources = {
-        { name = "nvim_lsp" },
-        { name = "luasnip" },
-        { name = "buffer" },
-        { name = "nvim_lua" },
-        { name = "path" },
-        { name = "crates" },
-      },
-    },
-  },
-
   -- Install a plugin
   {
     "max397574/better-escape.nvim",
@@ -74,7 +60,7 @@ local plugins = {
   },
   {
     "saecki/crates.nvim",
-    ft = { "rust", "toml" },
+    ft = { "toml" },
     config = function(_, opts)
       local crates = require "crates"
       crates.setup(opts)
