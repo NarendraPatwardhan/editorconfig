@@ -47,6 +47,9 @@ M.mason = {
 
     -- go stuff
     "gopls",
+    "gofumpt",
+    "goimports-reviser",
+    "golines",
 
     -- python stuff
     "pyright",
