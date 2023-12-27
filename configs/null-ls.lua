@@ -21,7 +21,6 @@ local sources = {
   b.formatting.golines,
 
   -- python
-  b.diagnostics.mypy,
   b.diagnostics.ruff,
   b.formatting.black,
 }
