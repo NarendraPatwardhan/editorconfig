@@ -1,0 +1,15 @@
+require 'core.launch'
+
+plugin 'core.theme'
+plugin 'core.tree'
+plugin 'core.gitsigns'
+plugin 'core.nav'
+plugin 'core.icons'
+plugin 'core.whichkey'
+plugin 'core.treesitter'
+plugin 'core.cmp'
+plugin 'core.telescope'
+plugin 'core.lsp'
+plugin 'core.fmt'
+
+require 'core.lazy'
