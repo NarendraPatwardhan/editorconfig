@@ -11,5 +11,6 @@ plugin 'core.cmp'
 plugin 'core.telescope'
 plugin 'core.lsp'
 plugin 'core.fmt'
+plugin 'core.copilot'
 
 require 'core.lazy'
