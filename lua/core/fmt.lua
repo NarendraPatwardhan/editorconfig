@@ -25,7 +25,8 @@ local M = { -- Autoformat
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
-      golang = { 'gofmt', 'goimports' },
+      golang = { 'gofmt', 'goimports' }, -- Install goimports with `go get golang.org/x/tools/cmd/goimports`, gofmt comes with go
+      rust = { 'rustfmt' }, -- Install rustfmt with `rustup component add rustfmt`
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
