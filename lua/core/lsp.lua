@@ -164,11 +164,11 @@ function M.config()
       filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
       root_dir = util.root_pattern('go.work', 'go.mod'),
     },
-    -- pyright = {},
     rust_analyzer = {
       filetypes = 'rust',
       root_dir = util.root_pattern 'Cargo.toml',
     },
+    basedpyright = {},
     -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
     --
     -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -207,6 +207,10 @@ function M.config()
   local ensure_installed = vim.tbl_keys(servers or {})
   vim.list_extend(ensure_installed, {
     'stylua', -- Used to format Lua code
+    'black',
+    'isort', -- Used to format Python code
+    'gofumpt',
+    'goimports', -- Used to format Go code
   })
   require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
