@@ -169,6 +169,8 @@ function M.config()
       root_dir = util.root_pattern 'Cargo.toml',
     },
     pyright = {},
+    tsserver = {},
+    tailwindcss = {},
     -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
     --
     -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -211,6 +213,7 @@ function M.config()
     'isort', -- Used to format Python code
     'gofumpt',
     'goimports', -- Used to format Go code
+    'prettierd', -- Used to format Webdev code
   })
   require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

@@ -28,10 +28,16 @@ local M = { -- Autoformat
       golang = { 'gofumpt', 'goimports' },
       rust = { 'rustfmt' }, -- Install rustfmt with `rustup component add rustfmt`
       python = { 'black', 'isort' },
-      --
-      -- You can use a sub-list to tell conform to run *until* a formatter
-      -- is found.
-      -- javascript = { { "prettierd", "prettier" } },
+      javascript = { 'prettierd' },
+      typescript = { 'prettierd' },
+      javascriptreact = { 'prettierd' },
+      typescriptreact = { 'prettierd' },
+      svelte = { 'prettierd' },
+      css = { 'prettierd' },
+      html = { 'prettierd' },
+      json = { 'prettierd' },
+      yaml = { 'prettierd' },
+      markdown = { 'prettierd' },
     },
   },
 }
