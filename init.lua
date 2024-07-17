@@ -14,5 +14,7 @@ plugin 'core.fmt'
 plugin 'core.autopairs'
 plugin 'core.copilot'
 plugin 'core.mini'
+plugin 'core.trouble'
+plugin 'core.noice'
 
 require 'core.lazy'

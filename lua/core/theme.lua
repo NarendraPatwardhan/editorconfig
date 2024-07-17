@@ -1,11 +1,12 @@
 local M = {
-  'folke/tokyonight.nvim',
-  priority = 1000, -- Make sure to load this before all the other start plugins.
+  'catppuccin/nvim',
+  name = 'catppuccin',
+  flavor = 'mocha',
+  priority = 1000,
 }
 
 function M.init()
-  vim.cmd.colorscheme 'tokyonight-night'
-  vim.cmd.hi 'Comment gui=none'
+  vim.cmd.colorscheme 'catppuccin'
 end
 
 return M
