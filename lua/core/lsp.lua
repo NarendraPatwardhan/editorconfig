@@ -168,7 +168,15 @@ function M.config()
       filetypes = 'rust',
       root_dir = util.root_pattern 'Cargo.toml',
     },
-    pyright = {},
+    pyright = {
+      settings = {
+        python = {
+          analysis = {
+            typeCheckingMode = 'off',
+          },
+        },
+      },
+    },
     tsserver = {},
     tailwindcss = {},
     svelte = {},
