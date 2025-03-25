@@ -173,11 +173,14 @@ function M.config()
         python = {
           analysis = {
             typeCheckingMode = 'off',
+            exclude = { '.venv' },
+            venvPath = '.',
+            venv = '.venv',
           },
         },
       },
     },
-    tsserver = {},
+    ts_ls = {},
     tailwindcss = {},
     svelte = {},
     -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
