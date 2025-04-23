@@ -16,5 +16,7 @@ plugin 'core.copilot'
 plugin 'core.mini'
 plugin 'core.trouble'
 plugin 'core.noice'
+plugin 'core.markdown'
+plugin 'core.gemini'
 
 require 'core.lazy'
