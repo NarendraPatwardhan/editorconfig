@@ -169,18 +169,19 @@ function M.config()
       root_dir = util.root_pattern 'Cargo.toml',
     },
     pyright = {
+      root_dir = require('lspconfig').util.root_pattern('pyproject.toml', 'setup.py', 'requirements.txt'),
       settings = {
         python = {
+          pythonPath = vim.fn.getcwd() .. '/.venv/bin/python',
+
           analysis = {
-            typeCheckingMode = 'off',
+            typeCheckingMode = 'off', -- Or 'basic' or 'strict' as you prefer
             exclude = { '.venv' },
-            venvPath = '.',
-            venv = '.venv',
           },
         },
       },
     },
-    ts_ls = {},
+    tsserver = {},
     tailwindcss = {},
     svelte = {},
     -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
